@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 4 - Image Gallary</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+
+        <!-- Card -->
+        <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+
+            <!-- Menu Container -->
+            <div
+                class="flex flex-col items-center-justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+                <!-- Menu Items -->
+                <div class="group">
+                    <a href="#">Vector</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Illustations</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Images</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Icons</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+            </div>
+
+            <!-- Search Container -->
+            <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+                <!-- Input and Search Container -->
+                <div class="flex justify-between border-b">
+                    <input type="text" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none"
+                        placeholder="Search">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <!-- Upload Button -->
+                <button
+                    class="py-3 px-14 text-lg font-normal text-white bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black md:ml-8">
+                    Upload
+                </button>
+            </div>
+
+            <!-- Gallary Container -->
+            <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+
+                <!-- Image 1 -->
+                <div class="relative group">
+                    <img src="./assets/image-1.jpg" alt="" class="w-80">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative group">
+                    <img src="./assets/image-2.jpg" alt="" class="w-80">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="relative group">
+                    <img src="./assets/image-3.jpg" alt="" class="w-80 ">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="relative group">
+                    <img src="./assets/image-4.jpg" alt="" class="w-80 ">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="relative group">
+                    <img src="./assets/image-5.jpg" alt="" class="w-80">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="relative group">
+                    <img src="./assets/image-6.jpg" alt="" class="w-80 ">
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+                                <p class="text-sm">264 Likes - 43 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
